@@ -2,6 +2,9 @@
 
 https://www.fpcomplete.com/blog/2016/10/static-compilation-with-stack
 
+**Note**: Your open source license must be compatible with MUSL and GMP to use
+binaries built by this.
+
 ## Usage
 
 ```console
