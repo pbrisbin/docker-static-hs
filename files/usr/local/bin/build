@@ -1,0 +1,9 @@
+#!/bin/sh
+set -ex
+
+stack \
+  --local-bin-path /opt/bin install \
+  --ghc-options "-optl-static -fPIC -optc-Os"
+
+find /opt/bin -type f -mmin -1 -exec \
+  upx --best --ultra-brute {} \;
